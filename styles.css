@@ -1,0 +1,349 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0c0d18;
+    background-image: linear-gradient(rgba(12, 13, 24, 0.96), rgba(12, 13, 24, 0.98));
+    color: #f4f4f8;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Encabezado y navegación */
+.encabezado {
+    background-color: #111322;
+    border-bottom: 2px solid #753cff;
+    padding: 18px 0;
+}
+
+.encabezado-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.encabezado h1 {
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+}
+
+.encabezado h1 span,
+.portada h2 span {
+    color: #a78bfa;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+
+.menu a,
+.pie-contenido a {
+    color: #f4f4f8;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.pie-contenido a:hover {
+    color: #a78bfa;
+}
+
+/* Portada */
+.portada {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    background-color: #17152d;
+    background-image: linear-gradient(90deg, rgba(12, 13, 24, 0.97), rgba(30, 19, 57, 0.78)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80');
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.portada-contenido {
+    max-width: 1120px;
+}
+
+.etiqueta {
+    color: #c4b5fd;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.portada h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.portada-contenido > p:not(.etiqueta) {
+    max-width: 580px;
+    margin-bottom: 26px;
+}
+
+.boton {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    background-color: #753cff;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    padding: 12px 22px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #5b2bc7;
+}
+
+/* Secciones y productos */
+.seccion {
+    padding: 68px 0;
+}
+
+.titulo-seccion {
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #b9bacb;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.tarjeta-producto {
+    transition: transform 0.2s;
+    background-color: #17192a;
+    border: 1px solid #2c2e46;
+    border-radius: 10px;
+    flex: 1 1 260px;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta-producto img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.producto-contenido {
+    padding: 20px;
+}
+
+.producto-contenido h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.producto-contenido p {
+    color: #c7c8d7;
+}
+
+.producto-contenido .precio {
+    color: #c4b5fd;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+/* Reseñas con CSS Grid */
+.lista-resenas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.tarjeta-resena {
+    background-color: #17192a;
+    border: 1px solid #2c2e46;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.estrellas {
+    color: #facc15;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-resena h3 {
+    color: #c4b5fd;
+    font-size: 1rem;
+    margin-top: 16px;
+}
+
+/* Formulario de contacto */
+.contacto {
+    background-color: #121425;
+}
+
+.contacto-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+}
+
+.contacto .titulo-seccion {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.contacto-contenido > div > p {
+    color: #c7c8d7;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    background-color: #0c0d18;
+    border: 1px solid #454761;
+    border-radius: 6px;
+    color: #ffffff;
+    font: inherit;
+    padding: 12px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #a78bfa;
+    outline: 2px solid #753cff;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario .boton {
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #090a12;
+    border-top: 1px solid #2c2e46;
+    padding: 22px 0;
+}
+
+.pie-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.pie-contenido p {
+    color: #b9bacb;
+    font-size: 0.9rem;
+}
+
+/* Diseño adaptable a pantallas más pequeñas */
+@media (max-width: 768px) {
+    .encabezado-contenido {
+        flex-direction: column;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .portada {
+        min-height: 340px;
+        padding: 55px 0;
+    }
+
+    .portada h2 {
+        font-size: 2rem;
+    }
+
+    .titulo-seccion {
+        font-size: 1.5rem;
+    }
+
+    .lista-resenas {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .pie-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion {
+        padding: 48px 0;
+    }
+
+    .menu {
+        gap: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    .portada h2 {
+        font-size: 1.7rem;
+    }
+
+    .etiqueta {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+}
