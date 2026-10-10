@@ -10,7 +10,6 @@ GameZone es una página web de ejemplo para una tienda de videojuegos desarrolla
 
 ## Tecnologías utilizadas
 * HTML5
-* CSS3
 * Flexbox
 * CSS 
 * Media Queries

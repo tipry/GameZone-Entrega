@@ -1,4 +1,6 @@
+css
 /* Estilos generales */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +13,10 @@ html {
 
 body {
     background-color: #0c0d18;
-    background-image: linear-gradient(rgba(12, 13, 24, 0.96), rgba(12, 13, 24, 0.98));
+    background-image: linear-gradient(
+        rgba(12, 13, 24, 0.96),
+        rgba(12, 13, 24, 0.98)
+    );
     color: #f4f4f8;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -24,6 +29,7 @@ body {
 }
 
 /* Encabezado y navegación */
+
 .encabezado {
     background-color: #111322;
     border-bottom: 2px solid #753cff;
@@ -59,6 +65,7 @@ body {
 .pie-contenido a {
     color: #f4f4f8;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .menu a:hover,
@@ -67,12 +74,18 @@ body {
 }
 
 /* Portada */
+
 .portada {
-    min-height: 390px;
     display: flex;
     align-items: center;
     background-color: #17152d;
-    background-image: linear-gradient(90deg, rgba(12, 13, 24, 0.97), rgba(30, 19, 57, 0.78)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80');
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(12, 13, 24, 0.97),
+            rgba(30, 19, 57, 0.78)
+        ),
+        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80');
     background-position: center;
     background-size: cover;
     padding: 70px 0;
@@ -113,13 +126,67 @@ body {
     font-weight: 700;
     padding: 12px 22px;
     text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 .boton:hover {
     background-color: #5b2bc7;
+    transform: translateY(-2px);
+}
+
+/* Video de Minecraft */
+
+.video-presentacion {
+    max-width: 850px;
+    margin: 42px auto 0;
+    text-align: center;
+}
+
+.video-presentacion h3 {
+    color: #c4b5fd;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.video-descripcion {
+    color: #d0cfe0;
+    margin-bottom: 20px;
+}
+
+.video-contenedor {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 2px solid #753cff;
+    border-radius: 12px;
+    background-color: #090a12;
+    box-shadow: 0 0 22px rgba(117, 60, 255, 0.3);
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.video-contenedor:hover {
+    border-color: #a78bfa;
+    box-shadow: 0 0 28px rgba(117, 60, 255, 0.5);
+}
+
+.video-contenedor iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-nota {
+    color: #b9bacb;
+    font-size: 0.9rem;
+    margin-top: 12px;
 }
 
 /* Secciones y productos */
+
 .seccion {
     padding: 68px 0;
 }
@@ -187,6 +254,7 @@ body {
 }
 
 /* Reseñas con CSS Grid */
+
 .lista-resenas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -213,6 +281,7 @@ body {
 }
 
 /* Formulario de contacto */
+
 .contacto {
     background-color: #121425;
 }
@@ -271,6 +340,7 @@ body {
 }
 
 /* Pie de página */
+
 .pie-pagina {
     background-color: #090a12;
     border-top: 1px solid #2c2e46;
@@ -290,6 +360,7 @@ body {
 }
 
 /* Diseño adaptable a pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .encabezado-contenido {
         flex-direction: column;
@@ -301,12 +372,19 @@ body {
     }
 
     .portada {
-        min-height: 340px;
         padding: 55px 0;
     }
 
     .portada h2 {
         font-size: 2rem;
+    }
+
+    .video-presentacion {
+        margin-top: 35px;
+    }
+
+    .video-presentacion h3 {
+        font-size: 1.15rem;
     }
 
     .titulo-seccion {
@@ -345,5 +423,17 @@ body {
     .etiqueta {
         font-size: 0.75rem;
         letter-spacing: 1px;
+    }
+
+    .video-presentacion {
+        margin-top: 30px;
+    }
+
+    .video-presentacion h3 {
+        font-size: 1rem;
+    }
+
+    .video-descripcion {
+        font-size: 0.9rem;
     }
 }
