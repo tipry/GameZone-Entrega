@@ -1,0 +1,325 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone | Tu tienda gamer</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenedor encabezado-contenido">
+            <h1>Game<span>Zone</span></h1>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Videojuegos</a></li>
+                    <li><a href="#resenas">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Portada principal -->
+        <section class="portada">
+            <div class="contenedor portada-contenido">
+
+                <p class="etiqueta">
+                    TU PRÓXIMA AVENTURA EMPIEZA ACÁ
+                </p>
+
+                <h2>Entrá a tu <span>GameZone</span></h2>
+
+                <p>
+                    Descubrí videojuegos, explorá nuevos mundos
+                    y encontrá tu próxima aventura favorita.
+                </p>
+
+                <a class="boton" href="#productos">
+                    Ver videojuegos
+                </a>
+
+                <!-- Video de Minecraft -->
+                <div class="video-presentacion">
+                    <h3>Descubrí tu próxima aventura</h3>
+
+                    <p class="video-descripcion">
+                        Explorá, construí y viví nuevas aventuras
+                        con Minecraft.
+                    </p>
+
+                    <div class="video-contenedor">
+                        <iframe
+                        src="https://www.youtube.com/embed/0maWbr0FHKY"
+                        title="Tráiler de Minecraft"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                       </iframe>
+                    </div>
+
+                    <p class="video-nota">
+                        Mirá el tráiler y preparate para jugar.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Catálogo de videojuegos -->
+        <section class="seccion productos" id="productos">
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">
+                    Videojuegos y monedas virtuales
+                </h2>
+
+                <p class="subtitulo">
+                    Videojuegos, aventuras y monedas virtuales para distintos gustos.
+                </p>
+
+                <div class="lista-productos">
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg"
+                             alt="Portada de Cyberpunk 2077" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Cyberpunk 2077</h3>
+                            <p>Explorá Night City en una aventura futurista de mundo abierto.</p>
+                            <p class="precio">Consultar tienda oficial</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg"
+                             alt="Portada de Red Dead Redemption 2" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Red Dead Redemption 2</h3>
+                            <p>Viví una aventura de acción en el lejano oeste.</p>
+                            <p class="precio">$ 23.085</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2669320/header.jpg"
+                             alt="Portada de EA SPORTS FC 25" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>EA SPORTS FC 25</h3>
+                            <p>Armá tu equipo y disfrutá del fútbol.</p>
+                            <p class="precio">$ 49.280</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://images.unsplash.com/photo-1607513746994-51f730a44832?auto=format&fit=crop&w=900&q=80"
+                             alt="Portada de Minecraft" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Minecraft</h3>
+                            <p>Construí, explorá y sobreviví en mundos creados por vos.</p>
+                            <p class="precio">Consultar tienda oficial</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg"
+                             alt="Portada de Elden Ring" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Elden Ring</h3>
+                            <p>Explorá un enorme mundo de fantasía y enfrentá desafíos épicos.</p>
+                            <p class="precio">$ 73.905</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg"
+                             alt="Portada de The Witcher 3" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>The Witcher 3: Wild Hunt</h3>
+                            <p>Una aventura de fantasía llena de misiones y monstruos.</p>
+                            <p class="precio">$ 53.885</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/990080/header.jpg"
+                             alt="Portada de Hogwarts Legacy" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Hogwarts Legacy</h3>
+                            <p>Descubrí el mundo mágico de Hogwarts.</p>
+                            <p class="precio">Consultar tienda oficial</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg"
+                             alt="Portada de Terraria" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Terraria</h3>
+                            <p>Explorá, construí y luchá en un mundo de aventura 2D.</p>
+                            <p class="precio">Consultar tienda oficial</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg"
+                             alt="Portada de Stardew Valley" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Stardew Valley</h3>
+                            <p>Creá tu propia granja y conocé a sus habitantes.</p>
+                            <p class="precio">$ 7.685</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg"
+                             alt="Portada de Hollow Knight" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Hollow Knight</h3>
+                            <p>Explorá un reino subterráneo lleno de secretos.</p>
+                            <p class="precio">$ 7.685</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg"
+                             alt="Portada de God of War" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>God of War</h3>
+                            <p>Acompañá a Kratos y Atreus en una aventura épica.</p>
+                            <p class="precio">$ 76.985</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg"
+                             alt="Portada de Resident Evil 4" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Resident Evil 4</h3>
+                            <p>Sobreviví a una peligrosa misión de terror y acción.</p>
+                            <p class="precio">$ 11.165</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80"
+                             alt="Imagen de gaming para League of Legends" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>League of Legends — 575 RP</h3>
+                            <p>Puntos Riot para desbloquear contenido dentro del juego.</p>
+                            <p class="precio">Consultar tienda oficial</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80"
+                             alt="Imagen de gaming para Valorant" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>Valorant — 475 VP</h3>
+                            <p>Puntos Valorant para contenido cosmético dentro del juego.</p>
+                            <p class="precio">Consultar tienda oficial</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2669320/header.jpg"
+                             alt="Imagen de EA SPORTS FC 25 para FC Points" loading="lazy">
+                        <div class="producto-contenido">
+                            <h3>EA SPORTS FC 25 — 100 FC Points</h3>
+                            <p>Moneda virtual para usar dentro de EA SPORTS FC 25.</p>
+                            <p class="precio">$ 999</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Reseñas -->
+        <section class="seccion resenas" id="resenas">
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">Lo que dicen los jugadores</h2>
+                <p class="subtitulo">Opiniones de nuestra comunidad.</p>
+
+                <div class="lista-resenas">
+
+                    <article class="tarjeta-resena">
+                        <p class="estrellas">★★★★★</p>
+                        <p>“La página es clara y encontré juegos que me interesan.”</p>
+                        <h3>— Matías</h3>
+                    </article>
+
+                    <article class="tarjeta-resena">
+                        <p class="estrellas">★★★★★</p>
+                        <p>“Me gusta el diseño y lo fácil que es recorrer las secciones.”</p>
+                        <h3>— Nicolás</h3>
+                    </article>
+
+                    <article class="tarjeta-resena">
+                        <p class="estrellas">★★★★☆</p>
+                        <p>“Una buena selección para descubrir nuevas aventuras.”</p>
+                        <h3>— Franco</h3>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="seccion contacto" id="contacto">
+            <div class="contenedor contacto-contenido">
+
+                <div>
+                    <h2 class="titulo-seccion">Contactanos</h2>
+                    <p>
+                        ¿Tenés alguna consulta o sugerencia?
+                        Completá el formulario y escribinos.
+                    </p>
+                </div>
+
+                <form action="https://formspree.io/f/myekgaww"
+                      method="POST" class="formulario">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Tu nombre" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="tu@email.com" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"
+                              placeholder="Escribí tu mensaje..." required></textarea>
+
+                    <button type="submit" class="boton">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor pie-contenido">
+            <p>GameZone © 2026 - Proyecto educativo de HTML y CSS.</p>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
